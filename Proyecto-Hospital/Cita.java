@@ -1,28 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.gestionclinica;
-
-/**
- *
- * @author 3nder
- */
-import java.util.Date;
-
 public class Cita {
     private String fecha;
+    private String hora;
     private Medico medico;
     private Paciente paciente;
 
-    public Cita(String fecha, Medico medico, Paciente paciente) {
+    public Cita(String fecha, String hora, Medico medico, Paciente paciente) {
         this.fecha = fecha;
+        this.hora = hora;
         this.medico = medico;
         this.paciente = paciente;
     }
 
     public String getFecha() {
         return fecha;
+    }
+
+    public String getHora() {
+        return hora;
     }
 
     public Medico getMedico() {
@@ -32,6 +26,8 @@ public class Cita {
     public Paciente getPaciente() {
         return paciente;
     }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
 }
-
-
