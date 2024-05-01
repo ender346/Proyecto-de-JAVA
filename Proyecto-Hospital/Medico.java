@@ -1,20 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.gestionclinica;
-
-/**
- *
- * @author LENOVO
- */
 public class Medico {
     private String nombre;
     private String cedula;
+    private String genero;
 
-    public Medico(String nombre, String cedula) {
+    public Medico(String nombre, String cedula, String genero) {
         this.nombre = nombre;
         this.cedula = cedula;
+        this.genero = genero;
     }
 
     public String getNombre() {
@@ -25,11 +17,19 @@ public class Medico {
         return cedula;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public void setCedula(String cedula) {
         this.cedula = cedula;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 }
